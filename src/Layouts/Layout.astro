@@ -1,5 +1,5 @@
 ---
-import '../styles/Layout.css'
+import '../styles/layout.css'
 ---
 
 <!DOCTYPE html>
@@ -10,9 +10,11 @@ import '../styles/Layout.css'
     <title>Equinoccio Landing</title>
 </head>
 <body>
+    <main class="mx-auto container">
+        <!-- Colocamos la stiqueta slot, la cual permite agregar el contenido de cualquier otra pagina que importamos -->
+        <slot/>
 
-    <!-- Colocamos la stiqueta slot, la cual permite agregar el contenido de cualquier otra pagina que importamos -->
-    <slot/>
+    </main>
     
 </body>
 </html>

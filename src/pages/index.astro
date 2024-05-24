@@ -1,8 +1,15 @@
 ---
 import Layout from "../Layouts/Layout.astro";
-import Nav from "../Layouts/nav.astro";
+import Nav from "../components/landing/Nav.astro"
+import Header from "../components/landing/Header.astro"
+import Footer from "../components/landing/Footer.astro"
 ---
+<!-- <Header></Header> -->
+
+<Nav></Nav>
 <Layout>
-	<Nav class=""></Nav>
-	<h1 class="mt-5">Home Page</h1>
+	<h1 class="">Home Page</h1>
+    <!-- Importa Preline -->
+    <script type="module" src="/node_modules/preline/dist/preline.js"></script>
 </Layout>
+<Footer></Footer>
