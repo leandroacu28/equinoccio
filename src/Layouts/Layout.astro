@@ -6,6 +6,8 @@ interface Props {
 const {pageTitle='#',pageDescription='##'}=Astro.props;
 
 import '../styles/layout.css'
+import Nav from '../components/landing/Nav.astro';
+import Form from '../components/landing/Form.astro';
 
 ---
 
@@ -20,11 +22,13 @@ import '../styles/layout.css'
 
 </head>
 <body>
+    <Nav></Nav>
     <main class="mx-auto">
         <!-- Colocamos la stiqueta slot, la cual permite agregar el contenido de cualquier otra pagina que importamos -->
         <slot/>
-
     </main>
-    
+    <Form></Form>
+    <script type="module" src="/node_modules/preline/dist/preline.js"></script>
+
 </body>
 </html>
