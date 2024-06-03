@@ -3,11 +3,13 @@ interface Props {
     pageTitle?:string
     pageDescription?:string
 }
-const {pageTitle='#',pageDescription='##'}=Astro.props;
+const {pageTitle='#',pageDescription='Pagina sin descripcion'}=Astro.props;
 
 import '../styles/layout.css'
 import Nav from '../components/landing/Nav.astro';
 import Form from '../components/landing/Form.astro';
+
+
 
 ---
 
@@ -18,10 +20,9 @@ import Form from '../components/landing/Form.astro';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="descripcion" content={pageDescription}>
     <title>Equinoccio|{pageTitle}</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+    <link rel="icon" href="../../public/favicon.ico" type="image/png">
 </head>
-<body>
+<body class="cssbody">
     <Nav></Nav>
     <main class="mx-auto">
         <!-- Colocamos la stiqueta slot, la cual permite agregar el contenido de cualquier otra pagina que importamos -->
@@ -30,21 +31,8 @@ import Form from '../components/landing/Form.astro';
     <Form></Form>
     <script type="module" src="/node_modules/preline/dist/preline.js"></script>
     
-
+    
 </body>
-<script>
-    const button1=document.getElementById('button1');
-    const button2= document.getElementById('button2');
-  
-    button1.addEventListener('click', () => {
-        button1.classList.add('hidden');
-        button2.classList.remove('hidden');
-    });
-  
-    button2.addEventListener('click', () => {
-        button2.classList.add('hidden');
-        button1.classList.remove('hidden');
-    });
-  </script>
+
   
 </html>

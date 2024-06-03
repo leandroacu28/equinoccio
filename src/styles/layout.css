@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+.cssbody {
     background-color: #202020;
     color:whitesmoke;
 }
