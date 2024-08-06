@@ -8,7 +8,7 @@ const {pageTitle='#',pageDescription='Pagina sin descripcion'}=Astro.props;
 import '../styles/layout.css'
 import Nav from '../components/landing/Nav.astro';
 import Form from '../components/landing/Form.astro';
-
+import {ViewTransitions} from 'astro:transitions';
 
 
 ---
@@ -21,6 +21,7 @@ import Form from '../components/landing/Form.astro';
     <meta name="descripcion" content={pageDescription}>
     <title>Equinoccio|{pageTitle}</title>
     <link rel="icon" href="/favicon.ico" type="image/png">
+   <ViewTransitions />
 </head>
 <body>
     <Nav></Nav>
@@ -30,8 +31,6 @@ import Form from '../components/landing/Form.astro';
     </main>
     <Form></Form>
     <script type="module" src="/node_modules/preline/dist/preline.js"></script>
-    
-    
 </body>
 
   
