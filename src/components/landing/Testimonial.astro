@@ -1,6 +1,8 @@
 ---
 
+import App from "./App.astro";
 import Line from "./Line.astro";
+import MyReactComponent from './MyReactComponent.jsx';
 
 
 
@@ -76,8 +78,9 @@ const testimonios = [
 
     
 <!--hacer un carusell  -->
-
-    
+<h1>integrando astro con react</h1>
+<MyReactComponent client:only="react"></MyReactComponent>
+<App></App>
     
     <!-- testimonios -->
      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-5 pt-20">

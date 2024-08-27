@@ -9,7 +9,7 @@ import '../styles/layout.css'
 import Nav from '../components/landing/Nav.astro';
 import Form from '../components/landing/Form.astro';
 import {ViewTransitions} from 'astro:transitions';
-
+import MyReactComponent from '../components/landing/MyReactComponent';
 
 ---
 
@@ -21,10 +21,7 @@ import {ViewTransitions} from 'astro:transitions';
     <meta name="descripcion" content={pageDescription}>
     <title>Equinoccio|{pageTitle}</title>
     <link rel="icon" href="/favicon.ico" type="image/png">
-    <link
-  rel="stylesheet"
-  
-   <ViewTransitions />
+    <ViewTransitions />
 </head>
 <body>
     <Nav></Nav>
@@ -34,6 +31,8 @@ import {ViewTransitions} from 'astro:transitions';
     </main>
     <Form></Form>
     <script type="module" src="/node_modules/preline/dist/preline.js"></script>
+
+    <MyReactComponent  client:visible></MyReactComponent>
 </body>
 
   
