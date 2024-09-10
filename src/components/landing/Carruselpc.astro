@@ -41,21 +41,20 @@ email:'credian.sl@gmail.com',
 
 ]
 ---
-<!--  -->
 
 
 
-<swiper-container class=" pt-20"
+<swiper-container class="md:pt-20 hidden md:inline border-2 container"
  pagination="true" 
  pagination-clickable="true" 
  slides-per-view="3"
- space-between="30" 
+ space-between="30"     
  free-mode="true"
  autoplay-delay="2000" >
  {Testimonios.map(testimonio=>(
-    <swiper-slide>
-        <div class="w-[275px]  max-w-sm overflow-hidden  bg-white rounded-lg shadow-lg dark:bg-gray-800 mb-5 lg:mb-0">
-            <img class="object-contain text-center object-center w-full h-56" src={testimonio.imgSrc} alt="logo-venezia">
+    <swiper-slide class="">
+        <div class="border-2 border-gray-950 border-opacity-5 w-[275px] max-w-sm mx-auto overflow-hidden rounded-lg shadow-lg dark:bg-gray-800 mb-5 lg:mb-0">
+            <img class="object-contain p-2 text-center object-center w-full h-56 bg-white" src={testimonio.imgSrc} alt="logo-venezia">
          
             <div class="flex items-center px-6 py-3 bg-gray-900">
                 
@@ -99,6 +98,4 @@ email:'credian.sl@gmail.com',
  ))}
 
 </swiper-container>
-
-
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
