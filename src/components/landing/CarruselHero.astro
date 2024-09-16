@@ -1,0 +1,52 @@
+---
+import Button from "./Button.astro";
+---
+<div class="max-w-[85rem] mx-auto pt-32">
+  <swiper-container class="h-full w-full" pagination="true" pagination-clickable="true" navigation="true" space-between="0"
+    loop="true"
+ autoplay-delay="3000"
+
+ grab-cursor="true"    
+
+    >
+    <!-- slide de sistemas de caja -->
+    <swiper-slide class="min-h-screen bg-cover" style="background-image: url('../../img/header/cajeros.jpg'); background-size: cover; background-position: center;">
+        <!-- Contenido opcional dentro del slide -->
+        <div class="capitalize absolute inset-0 flex flex-col justify-start items-center text-white bg-black bg-opacity-50">
+            
+                <h1 class="pt-36 mt-5 text-5xl font-bold shadow-black uppercase text-center"><span class="text-yellow-500">G</span>estión de cajas segura y eficiente</h1>
+            
+            <div class="">
+                <h2 class="text-xl mr-96 pr-16 mt-4 text-start">Controla cada transacción con facilidad y precisión</h2>
+                <!-- <h3 class="text-xl">Nuestro sistema optimiza el flujo de caja en tiempo real.</h3> -->
+                <button class=" uppercase  mt-4 py-2 px-2 bg-gray-100 bg-opacity-70 text-lg text-black font-semibold rounded-md shadow-2xl border-2 border-yellow-200 hover:bg-yellow-500 disabled:opacity-50 disabled:pointer-events-none ">
+                    solicitar demo
+                </button>
+            </div>
+        </div>
+    </swiper-slide>
+
+    <!-- slide de presupuesto -->
+    <swiper-slide class="min-h-screen bg-contain bg-no-repeat " style="background-image: url('../../img/header/presupuesto.jpg'); background-size: cover; background-position: center;">
+        <!-- Contenido opcional dentro del slide -->
+        <div class="capitalize absolute inset-0 flex flex-col justify-start items-center text-white bg-black bg-opacity-50 ml10">
+            
+                <h1 class=" pt-16 w-1/2 text-5xl font-bold shadow-black uppercase text-center"><span class="text-yellow-500">A</span>giliza la Creación de Presupuestos</h1>
+                <h2 class="text-3xl  w-1/2 text-center pt-5 pb-5">Ahorra tiempo y mejora tu productividad.</h2>
+                <button class="uppercase py-2 px-2 items-center bg-gray-100 bg-opacity-70 text-lg text-black font-semibold rounded-md shadow-2xl border-2 border-yellow-200 hover:bg-yellow-500 disabled:opacity-50 disabled:pointer-events-none ">
+                    solicitar demo
+                </button>
+                
+        </div>
+        
+            
+    </swiper-slide>
+    <swiper-slide>Slide 2</swiper-slide>
+    <swiper-slide>Slide 3</swiper-slide>
+    
+  </swiper-container>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+  
