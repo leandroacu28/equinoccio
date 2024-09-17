@@ -2,15 +2,14 @@
 import Button from "./Button.astro";
 ---
 <div class="max-w-[85rem] mx-auto pt-32">
-  <swiper-container class="h-full w-full" pagination="true" pagination-clickable="true" navigation="true" space-between="0"
-    loop="false"
- autoplay-delay="3000"
-
- grab-cursor="true"    
+  <swiper-container class="h-[600px] w-[1400px]" pagination="true" pagination-clickable="true" navigation="true" space-between="0"
+  loop="true"
+  autoplay-delay="9000"
+  grab-cursor="true"    
 
     >
     <!-- slide de sistemas de caja -->
-    <swiper-slide class="min-h-screen bg-cover" style="background-image: url('../../img/header/cajeros.jpg'); background-size: cover; background-position: center;">
+    <swiper-slide class="min-h-screen bg-cover bg-no-repeat" style="background-image: url('/img/webp/cajeros.webp'); background-position: center;">
         <!-- Contenido opcional dentro del slide -->
         <div class="capitalize absolute inset-0 flex flex-col justify-start items-center text-white bg-black bg-opacity-50">
             
@@ -19,24 +18,23 @@ import Button from "./Button.astro";
             <div class="">
                 <h2 class="text-xl mr-96 pr-16 mt-4 text-start">Controla cada transacción con facilidad y precisión</h2>
                 <!-- <h3 class="text-xl">Nuestro sistema optimiza el flujo de caja en tiempo real.</h3> -->
-                <button class=" uppercase  mt-4 py-2 px-2 bg-gray-100 bg-opacity-70 text-lg text-black font-semibold rounded-md shadow-2xl border-2 border-yellow-200 hover:bg-yellow-500 disabled:opacity-50 disabled:pointer-events-none ">
+                <button class=" mt-4 uppercase text-white font-semibold py-2 px-2 items-center rounded-md shadow-2xl border bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-orange-500 hover:to-yellow-500">
                     solicitar demo
-                </button>
+                </button>  
             </div>
         </div>
     </swiper-slide>
 
     <!-- slide de presupuesto -->
-    <swiper-slide class="min-h-screen bg-contain bg-no-repeat " style="background-image: url('../../img/header/presupuesto.jpg'); background-size: cover; background-position: center;">
+    <swiper-slide class="bg-right-bottom bg-cover bg-no-repeat" style="background-image: url('/img/webp/presupuesto.webp');">
         <!-- Contenido opcional dentro del slide -->
-        <div class="capitalize absolute inset-0 flex flex-col justify-start items-center text-white bg-black bg-opacity-50 ml10">
+        <div class="capitalize absolute inset-0 flex flex-col justify-start items-center text-white bg-black bg-opacity-50">
             
-                <h1 class=" pt-16 w-1/2 text-5xl font-bold shadow-black uppercase text-center"><span class="text-yellow-500">A</span>giliza la Creación de Presupuestos</h1>
-                <h2 class="text-3xl  w-1/2 text-center pt-5 pb-5">Ahorra tiempo y mejora tu productividad.</h2>
-                <button class="uppercase py-2 px-2 items-center bg-gray-100 bg-opacity-70 text-lg text-black font-semibold rounded-md shadow-2xl border-2 border-yellow-200 hover:bg-yellow-500 disabled:opacity-50 disabled:pointer-events-none ">
+                <h1 class=" pt-16 w-3/4 text-4xl font-bold shadow-black uppercase text-center"><span class="text-yellow-500">A</span>giliza la Creación de Presupuestos</h1>
+                <h2 class="text-2xl  w-1/2 text-center pt-5 pb-5">Ahorra tiempo y mejora tu productividad.</h2>
+                <button class="uppercase text-white font-semibold py-2 px-2 items-center rounded-md shadow-2xl border bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-orange-500 hover:to-yellow-500">
                     solicitar demo
-                </button>
-                
+                </button>    
         </div>
         
             

@@ -23,17 +23,15 @@ import {ViewTransitions} from 'astro:transitions';
 
     <ViewTransitions />
 </head>
-<body>
+<body class="max-w-[85rem] mx-auto">
     <Nav></Nav>
-    <main class="mx-auto">
         <!-- Colocamos la stiqueta slot, la cual permite agregar el contenido de cualquier otra pagina que importamos -->
         <slot/>
-    </main>
-    
+    <!-- </main> -->
     <Form></Form>
     <script type="module" src="/node_modules/preline/dist/preline.js"></script>
 
 </body>
 
-  
+
 </html>
