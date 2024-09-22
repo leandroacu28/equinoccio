@@ -2,7 +2,7 @@
 import Button from "./Button.astro";
 ---
 <div class="max-w-[85rem] mx-auto pt-32">
-  <swiper-container class="h-[600px] w-[1400px]" pagination="true" pagination-clickable="true" navigation="true" space-between="0"
+  <swiper-container class="h-[600px] w-[1350px]" pagination="true" pagination-clickable="true" navigation="true" space-between="0"
   loop="true"
   autoplay-delay="9000"
   grab-cursor="true"    
@@ -13,7 +13,7 @@ import Button from "./Button.astro";
         <!-- Contenido opcional dentro del slide -->
         <div class="capitalize absolute inset-0 flex flex-col justify-start items-center text-white bg-black bg-opacity-50">
             
-                <h1 class="pt-36 mt-5 text-5xl font-bold shadow-black uppercase text-center"><span class="text-yellow-500">G</span>estión de cajas segura y eficiente</h1>
+                <h1 class="pt-36 mt-5 text-5xl font-bold shadow-black uppercase text-center"><span class="text-yellow-500 shadow-black font-bold">G</span>estión de cajas segura y eficiente</h1>
             
             <div class="">
                 <h2 class="text-xl mr-96 pr-16 mt-4 text-start">Controla cada transacción con facilidad y precisión</h2>
@@ -30,7 +30,7 @@ import Button from "./Button.astro";
         <!-- Contenido opcional dentro del slide -->
         <div class="capitalize absolute inset-0 flex flex-col justify-start items-center text-white bg-black bg-opacity-50">
             
-                <h1 class=" pt-16 w-3/4 text-4xl font-bold shadow-black uppercase text-center"><span class="text-yellow-500">A</span>giliza la Creación de Presupuestos</h1>
+                <h1 class=" pt-16 w-3/4 text-5xl font-bold shadow-black uppercase text-center"><span class="text-yellow-500">A</span>giliza la Creación de Presupuestos</h1>
                 <h2 class="text-2xl  w-1/2 text-center pt-5 pb-5">Ahorra tiempo y mejora tu productividad.</h2>
                 <button class="uppercase text-white font-semibold py-2 px-2 items-center rounded-md shadow-2xl border bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-orange-500 hover:to-yellow-500">
                     solicitar demo
@@ -39,9 +39,22 @@ import Button from "./Button.astro";
         
             
     </swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
-    
+
+    <!-- slide de comercios -->
+    <swiper-slide class="bg-cover bg-no-repeat bg-left-bottom" style="background-image: url('/img/webp/ventas.webp');">
+        <!-- Contenido opcional dentro del slide -->
+        <div class=" absolute inset-0 flex flex-col justify-start items-center text-white bg-black bg-opacity-50">
+            
+                <h1 class=" pt-16 w-3/4 text-5xl font-bold shadow-black uppercase text-center"><span class="text-yellow-500 capitalize">T</span>u Comercio, Siempre Bajo Control</h1>
+                <h2 class="text-2xl  w-1/2 text-center pt-5 pb-5">Monitoreá ventas, gestioná inventarios y ofrecé la mejor experiencia a tus clientes con una plataforma completa</h2>
+                <button class="uppercase text-white font-semibold py-2 px-2 items-center rounded-md shadow-2xl border bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-orange-500 hover:to-yellow-500">
+                    solicitar demo
+                </button>    
+        </div>
+        
+            
+    </swiper-slide>
+        
   </swiper-container>
 </div>
 
